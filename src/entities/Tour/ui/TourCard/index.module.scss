@@ -1,0 +1,44 @@
+.tourCard {
+  width: 25.6rem;
+  height: 30rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: all ease-in-out 0.2s;
+  border: 0.2rem solid silver;
+  cursor: pointer;
+
+  &:hover {
+    transition: all ease-in-out 0.2s;
+    box-shadow: -2px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .imgWrapper {
+    position: relative;
+    height: 20rem;
+
+    .country {
+      width: 2rem;
+    }
+  }
+
+  .country {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  &__contain {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    justify-content: space-between;
+  }
+
+  &__table {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 1.2rem;
+  }
+}

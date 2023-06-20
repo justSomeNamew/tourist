@@ -1,0 +1,52 @@
+.tourPageWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.tourPage {
+  display: flex;
+  flex-direction: column;
+  width: 120rem;
+}
+
+.tourInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+  padding-top: 10rem;
+}
+
+.tourPreviewWrapper {
+  min-width: 50rem;
+}
+
+.imagePreview {
+  object-fit: cover;
+}
+
+.tourDescription {
+  font-size: 2rem;
+}
+
+.tourCountry {
+  display: flex;
+  align-self: flex-end;
+  margin: 3rem 3rem 0 0;
+  width: 4rem;
+}
+
+header {
+  font-family: "Russo";
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.tourPrice {
+  padding-top: 3rem;
+  display: flex;
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 3rem;
+}

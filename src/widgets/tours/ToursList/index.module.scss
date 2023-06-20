@@ -1,0 +1,16 @@
+.tourListWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+  padding-bottom: 20rem;
+}
+
+.tourList {
+  width: 120rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}

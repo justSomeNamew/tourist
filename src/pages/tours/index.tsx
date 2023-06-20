@@ -1,7 +1,13 @@
+import { TOURS } from "shared/mock/tours";
+import { TourList } from "widgets/tours/ToursList";
+
+import styles from "./index.module.scss";
+
 const ToursPage: React.FC = () => {
   return (
     <div>
-      <h1>Tours page</h1>
+      <p className={styles.header}>Туры</p>
+      <TourList data={TOURS} />
     </div>
   );
 };
