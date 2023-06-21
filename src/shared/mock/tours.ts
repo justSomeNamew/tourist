@@ -2,6 +2,7 @@ export const TOURS = [
   {
     id: 1,
     countryName: "Россия",
+    isLiked: false,
     regions: [
       { name: "Сочи", id: 11 },
       { name: "Казань", id: 12 },
@@ -9,11 +10,12 @@ export const TOURS = [
     ],
     prices: ["59000", "39000", "49000"],
     image:
-      "https://cdn2.tu-tu.ru/image/pagetree_node_data/1/7d6a160634f09be45dc7155475bec126/",
+      "https://your-rus.com/wp-content/uploads/2019/10/Beauty-of-Russia.jpg",
   },
   {
     id: 2,
     countryName: "ОАЭ",
+    isLiked: false,
     regions: [
       { name: "Дубай", id: 21 },
       { name: "Абу-Даби", id: 22 },
@@ -25,6 +27,7 @@ export const TOURS = [
   {
     id: 3,
     countryName: "Италия",
+    isLiked: false,
     regions: [
       { name: "Милан", id: 31 },
       { name: "Рим", id: 32 },
@@ -35,6 +38,7 @@ export const TOURS = [
   {
     id: 4,
     countryName: "Австрия",
+    isLiked: false,
     regions: [
       { name: "Вена", id: 41 },
       { name: "Грац", id: 42 },
@@ -46,6 +50,7 @@ export const TOURS = [
   {
     id: 5,
     countryName: "Саудовская Аравия",
+    isLiked: false,
     regions: [
       { name: "Мекка", id: 51 },
       { name: "Медина", id: 52 },
@@ -57,6 +62,7 @@ export const TOURS = [
   {
     id: 6,
     countryName: "Турция",
+    isLiked: false,
     regions: [
       { name: "Стамбул", id: 61 },
       { name: "Анкара", id: 62 },
@@ -68,6 +74,7 @@ export const TOURS = [
   {
     id: 7,
     countryName: "Англия",
+    isLiked: false,
     regions: [
       { name: "Лондон", id: 71 },
       { name: "Бирмингем", id: 72 },
@@ -79,6 +86,7 @@ export const TOURS = [
   {
     id: 8,
     countryName: "Швейцария",
+    isLiked: false,
     regions: [
       { name: "Берн", id: 81 },
       { name: "Цюрих", id: 82 },
@@ -86,6 +94,6 @@ export const TOURS = [
     ],
     prices: ["179000", "149000", "199000"],
     image:
-      "https://cdn2.tu-tu.ru/image/pagetree_node_data/1/abe5083afcc74a47ac62017a61f9cf63/",
+      "https://www.tourdom.ru/hotline/upload/medialibrary/c7e/c7ef1cc1da84e8561a04efccf19c8cb4.jpg",
   },
 ];

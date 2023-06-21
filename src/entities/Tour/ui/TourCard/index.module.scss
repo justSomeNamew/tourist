@@ -1,6 +1,6 @@
 .tourCard {
   width: 25.6rem;
-  height: 30rem;
+  height: 34.6rem;
   border-radius: 2rem;
   overflow: hidden;
   transition: all ease-in-out 0.2s;
@@ -10,6 +10,13 @@
   &:hover {
     transition: all ease-in-out 0.2s;
     box-shadow: -2px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .actions {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 2rem;
   }
 
   .imgWrapper {

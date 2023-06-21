@@ -1,16 +1,29 @@
+import { useState, useEffect } from "react";
 import { useParams } from "react-router";
+
 import { Image } from "shared/ui/Image";
-import { TOURS_BY_REGION } from "shared/mock/tours-by-region";
 import { TourValues } from "entities/Tour/types/types";
 
 import styles from "./index.module.scss";
 
 const TourPage: React.FC = () => {
   const { tourId } = useParams();
+  const [tours, setTours] = useState<any>();
+  const [currentTour, setCurrentTour] = useState<any>();
 
-  const currentTour = TOURS_BY_REGION.find((tour) => {
-    if (tour.id === Number(tourId)) return tour;
-  });
+  useEffect(() => {
+    if (localStorage.getItem("tours-by-region"))
+      setTours(localStorage.getItem("tours-by-region"));
+  }, []);
+
+  useEffect(() => {
+    if (tours) {
+      const cTour = JSON.parse(tours).find(
+        (tour: any) => tour.id === Number(tourId)
+      );
+      setCurrentTour(cTour);
+    }
+  }, [tours]);
 
   return (
     <div className={styles.tourPageWrapper}>

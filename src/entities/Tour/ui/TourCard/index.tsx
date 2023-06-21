@@ -2,6 +2,7 @@ import { Image } from "shared/ui/Image";
 import styles from "./index.module.scss";
 import { TourValues } from "entities/Tour/types/types";
 import { Link } from "shared/ui/Link";
+import { Like } from "shared/ui/Like";
 
 export const TourCard: React.FC<any> = ({ data }) => {
   return (
@@ -15,19 +16,27 @@ export const TourCard: React.FC<any> = ({ data }) => {
 
       <div className={styles.tourCard__contain}>
         <div className={styles.tourCard__table}>
-          {data.regions.map((region: any) => {
+          {data.regions.map((region: any, i: number) => {
             return (
-              <Link to={`/tours-list/${region.id}`} className={styles.link}>
+              <Link
+                to={`/tours-list/${region.id}`}
+                className={styles.link}
+                key={i}
+              >
                 <p>{region.name}</p>
               </Link>
             );
           })}
         </div>
         <div className={styles.tourCard__table}>
-          {data.prices.map((price: string) => {
-            return <p>{price} руб</p>;
+          {data.prices.map((price: string, i: number) => {
+            return <p key={i}>{price} руб</p>;
           })}
         </div>
+      </div>
+
+      <div className={styles.actions}>
+        <Like isLiked={data.isLiked} idEntity={data.id} />
       </div>
     </div>
   );
